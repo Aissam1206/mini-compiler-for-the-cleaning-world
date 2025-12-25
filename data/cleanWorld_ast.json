@@ -1,0 +1,246 @@
+{
+  "type": "Program",
+  "name": "cleanWorld",
+  "body": [
+    {
+      "type": "VarDecl",
+      "id": {
+        "type": "Identifier",
+        "name": "startX"
+      },
+      "varType": "int",
+      "init": {
+        "type": "Literal",
+        "value": 0
+      }
+    },
+    {
+      "type": "VarDecl",
+      "id": {
+        "type": "Identifier",
+        "name": "heading"
+      },
+      "varType": "direction",
+      "init": null
+    },
+    {
+      "type": "VarDecl",
+      "id": {
+        "type": "Identifier",
+        "name": "calc"
+      },
+      "varType": "int",
+      "init": null
+    },
+    {
+      "type": "VarDecl",
+      "id": {
+        "type": "Identifier",
+        "name": "flagA"
+      },
+      "varType": "bool",
+      "init": null
+    },
+    {
+      "type": "VarDecl",
+      "id": {
+        "type": "Identifier",
+        "name": "flagB"
+      },
+      "varType": "bool",
+      "init": null
+    },
+    {
+      "type": "Assign",
+      "target": {
+        "type": "Identifier",
+        "name": "heading"
+      },
+      "value": {
+        "type": "Literal",
+        "value": "north"
+      }
+    },
+    {
+      "type": "Assign",
+      "target": {
+        "type": "Identifier",
+        "name": "flagA"
+      },
+      "value": {
+        "type": "Literal",
+        "value": true
+      }
+    },
+    {
+      "type": "Assign",
+      "target": {
+        "type": "Identifier",
+        "name": "flagB"
+      },
+      "value": {
+        "type": "Literal",
+        "value": false
+      }
+    },
+    {
+      "type": "Assign",
+      "target": {
+        "type": "Identifier",
+        "name": "calc"
+      },
+      "value": {
+        "type": "BinaryExpr",
+        "operator": "*",
+        "left": {
+          "type": "Literal",
+          "value": 10
+        },
+        "right": {
+          "type": "Literal",
+          "value": 2
+        }
+      }
+    },
+    {
+      "type": "Assign",
+      "target": {
+        "type": "Identifier",
+        "name": "calc"
+      },
+      "value": {
+        "type": "BinaryExpr",
+        "operator": "/",
+        "left": {
+          "type": "Identifier",
+          "name": "calc"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 2
+        }
+      }
+    },
+    {
+      "type": "Assign",
+      "target": {
+        "type": "Identifier",
+        "name": "calc"
+      },
+      "value": {
+        "type": "BinaryExpr",
+        "operator": "-",
+        "left": {
+          "type": "Identifier",
+          "name": "calc"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 5
+        }
+      }
+    },
+    {
+      "type": "IfStmt",
+      "test": {
+        "type": "BinaryExpr",
+        "operator": "or",
+        "left": {
+          "type": "Identifier",
+          "name": "flagA"
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "flagB"
+        }
+      },
+      "consequent": [
+        {
+          "type": "IfStmt",
+          "test": {
+            "type": "BinaryExpr",
+            "operator": "not",
+            "left": {
+              "type": "Literal",
+              "value": false
+            },
+            "right": null
+          },
+          "consequent": [
+            {
+              "type": "ActionStmt",
+              "action": "clean",
+              "args": []
+            }
+          ],
+          "alternate": null
+        }
+      ],
+      "alternate": null
+    },
+    {
+      "type": "WhileStmt",
+      "test": {
+        "type": "BinaryExpr",
+        "operator": "<",
+        "left": {
+          "type": "Identifier",
+          "name": "startX"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 5
+        }
+      },
+      "body": [
+        {
+          "type": "ActionStmt",
+          "action": "move",
+          "args": []
+        },
+        {
+          "type": "Assign",
+          "target": {
+            "type": "Identifier",
+            "name": "startX"
+          },
+          "value": {
+            "type": "BinaryExpr",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "startX"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "IfStmt",
+      "test": {
+        "type": "BinaryExpr",
+        "operator": "==",
+        "left": {
+          "type": "Identifier",
+          "name": "startX"
+        },
+        "right": {
+          "type": "Literal",
+          "value": 5
+        }
+      },
+      "consequent": [
+        {
+          "type": "ActionStmt",
+          "action": "turnRight",
+          "args": []
+        }
+      ],
+      "alternate": null
+    }
+  ]
+}
