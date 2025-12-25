@@ -1,0 +1,6 @@
+[
+  {
+    "code": "E_CONST_ASSIGN",
+    "msg": "Cannot reassign constant: MAX_VAL"
+  }
+]
