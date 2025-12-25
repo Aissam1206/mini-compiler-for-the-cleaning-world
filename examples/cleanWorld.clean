@@ -1,0 +1,45 @@
+program cleanWorld {
+    grid(5, 5);
+
+
+    # ================= DECLARATIONS =================
+    
+    var startX : int = 0; 
+    var heading : direction;
+    var calc : int;
+    # Variables for logic testing
+    var flagA : bool;
+    var flagB : bool;
+
+    # ================= STATEMENTS =================
+
+    heading = north;
+    flagA = true;
+    flagB = false;
+
+    # 1. Math Operators (*, /, -)
+    calc = 10 * 2;
+    calc = calc / 2;
+    calc = calc - 5;
+
+    # 2. Logic Operators (OR, NOT) 
+    # Valid: "if (bool or bool)"
+    if (flagA or flagB) {
+        # 3. Logic Operator (NOT)
+        if (not false) {
+            clean;
+        }
+    }
+
+    # 4. Relational Operator (<) and AND
+    # Note: We test AND inside the loop condition since our grammar allows it in expressions
+    while (startX < 5) {
+        move;
+        startX = startX + 1;
+    }
+    
+    # 5. Testing another relation
+    if (startX == 5) {
+        turnRight;
+    }
+}
