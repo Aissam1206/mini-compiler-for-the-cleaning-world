@@ -1,0 +1,13 @@
+Semantic Rules
+
+E_DUP_DECL:
+  Duplicate declaration of a name in the same scope.
+
+E_UNDEFINED:
+  Use of a name that has not been declared.
+
+E_CONST_ASSIGN:
+  Attempting to reassign a value to a constant (e.g., const MAX = 5; MAX = 10;).
+
+The analyzer applies declaration, resolution, and type-checking passes
+to detect these conditions.
