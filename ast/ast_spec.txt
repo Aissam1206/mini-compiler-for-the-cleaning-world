@@ -1,0 +1,46 @@
+AST Specification
+
+This document defines the AST structure used by the semantic analyzer.
+
+Program:
+  - type: Program
+  - name
+  - body (list of statements)
+
+ConstDecl:
+  - type: ConstDecl
+  - id (Identifier node)
+  - varType (e.g., "int", "bool")
+  - value (Expression node)
+
+VarDecl:
+  - type: VarDecl
+  - id (Identifier node)
+  - varType (e.g., "int", "bool")
+  - init (Expression node or null)
+
+Assign:
+  - type: Assign
+  - target (Identifier node)
+  - value (Expression node)
+
+IfStmt:
+  - type: IfStmt
+  - test (Expression node)
+  - consequent (Block/List of statements)
+  - alternate (Block/List of statements or null)
+
+WhileStmt:
+  - type: WhileStmt
+  - test (Expression node)
+  - body (Block/List of statements)
+
+ActionStmt:
+  - type: ActionStmt
+  - action (String, e.g., "move")
+  - args (List of expressions)
+
+Expressions:
+  - BinaryExpr (operator, left, right)
+  - Identifier (name)
+  - Literal (value)
