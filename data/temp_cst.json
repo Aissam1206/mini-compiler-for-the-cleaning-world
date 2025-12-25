@@ -1,0 +1,1162 @@
+{
+    "type": "PROGRAM",
+    "children": [
+        {
+            "type": "TERMINAL",
+            "value": "program"
+        },
+        {
+            "type": "TERMINAL",
+            "value": "cleanWorld"
+        },
+        {
+            "type": "TERMINAL",
+            "value": "{"
+        },
+        {
+            "type": "WORLD_DEF",
+            "children": [
+                {
+                    "type": "TERMINAL",
+                    "value": "grid"
+                },
+                {
+                    "type": "TERMINAL",
+                    "value": "("
+                },
+                {
+                    "type": "TERMINAL",
+                    "value": "5"
+                },
+                {
+                    "type": "TERMINAL",
+                    "value": ","
+                },
+                {
+                    "type": "TERMINAL",
+                    "value": "5"
+                },
+                {
+                    "type": "TERMINAL",
+                    "value": ")"
+                },
+                {
+                    "type": "TERMINAL",
+                    "value": ";"
+                }
+            ]
+        },
+        {
+            "type": "DECLARATIONS",
+            "children": [
+                {
+                    "type": "DECLARATION",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "var"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "startX"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ":"
+                        },
+                        {
+                            "type": "TYPE",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "int"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VAR_TAIL",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "="
+                                },
+                                {
+                                    "type": "EXPRESSION",
+                                    "children": [
+                                        {
+                                            "type": "TERM",
+                                            "children": [
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "LITERAL",
+                                                            "children": [
+                                                                {
+                                                                    "type": "TERMINAL",
+                                                                    "value": "0"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TERMINAL",
+                                    "value": ";"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "DECLARATION",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "var"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "heading"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ":"
+                        },
+                        {
+                            "type": "TYPE",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "direction"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VAR_TAIL",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": ";"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "DECLARATION",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "var"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "calc"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ":"
+                        },
+                        {
+                            "type": "TYPE",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "int"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VAR_TAIL",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": ";"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "DECLARATION",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "var"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "flagA"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ":"
+                        },
+                        {
+                            "type": "TYPE",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "bool"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VAR_TAIL",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": ";"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "DECLARATION",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "var"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "flagB"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ":"
+                        },
+                        {
+                            "type": "TYPE",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "bool"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VAR_TAIL",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": ";"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "STATEMENTS",
+            "children": [
+                {
+                    "type": "ASSIGNMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "heading"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "="
+                        },
+                        {
+                            "type": "EXPRESSION",
+                            "children": [
+                                {
+                                    "type": "TERM",
+                                    "children": [
+                                        {
+                                            "type": "FACTOR",
+                                            "children": [
+                                                {
+                                                    "type": "LITERAL",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "north"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "EXPRESSION_TAIL"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ";"
+                        }
+                    ]
+                },
+                {
+                    "type": "ASSIGNMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "flagA"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "="
+                        },
+                        {
+                            "type": "EXPRESSION",
+                            "children": [
+                                {
+                                    "type": "TERM",
+                                    "children": [
+                                        {
+                                            "type": "FACTOR",
+                                            "children": [
+                                                {
+                                                    "type": "LITERAL",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "true"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "EXPRESSION_TAIL"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ";"
+                        }
+                    ]
+                },
+                {
+                    "type": "ASSIGNMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "flagB"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "="
+                        },
+                        {
+                            "type": "EXPRESSION",
+                            "children": [
+                                {
+                                    "type": "TERM",
+                                    "children": [
+                                        {
+                                            "type": "FACTOR",
+                                            "children": [
+                                                {
+                                                    "type": "LITERAL",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "false"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "EXPRESSION_TAIL"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ";"
+                        }
+                    ]
+                },
+                {
+                    "type": "ASSIGNMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "calc"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "="
+                        },
+                        {
+                            "type": "EXPRESSION",
+                            "children": [
+                                {
+                                    "type": "TERM",
+                                    "children": [
+                                        {
+                                            "type": "FACTOR",
+                                            "children": [
+                                                {
+                                                    "type": "LITERAL",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "10"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM_TAIL",
+                                            "children": [
+                                                {
+                                                    "type": "MUL_OP",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "*"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "LITERAL",
+                                                            "children": [
+                                                                {
+                                                                    "type": "TERMINAL",
+                                                                    "value": "2"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "EXPRESSION_TAIL"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ";"
+                        }
+                    ]
+                },
+                {
+                    "type": "ASSIGNMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "calc"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "="
+                        },
+                        {
+                            "type": "EXPRESSION",
+                            "children": [
+                                {
+                                    "type": "TERM",
+                                    "children": [
+                                        {
+                                            "type": "FACTOR",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "calc"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM_TAIL",
+                                            "children": [
+                                                {
+                                                    "type": "MUL_OP",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "/"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "LITERAL",
+                                                            "children": [
+                                                                {
+                                                                    "type": "TERMINAL",
+                                                                    "value": "2"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "EXPRESSION_TAIL"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ";"
+                        }
+                    ]
+                },
+                {
+                    "type": "ASSIGNMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "calc"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "="
+                        },
+                        {
+                            "type": "EXPRESSION",
+                            "children": [
+                                {
+                                    "type": "TERM",
+                                    "children": [
+                                        {
+                                            "type": "FACTOR",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "calc"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "EXPRESSION_TAIL",
+                                    "children": [
+                                        {
+                                            "type": "ADD_OP",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "-"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "TERM",
+                                            "children": [
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "LITERAL",
+                                                            "children": [
+                                                                {
+                                                                    "type": "TERMINAL",
+                                                                    "value": "5"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION_TAIL"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ";"
+                        }
+                    ]
+                },
+                {
+                    "type": "IF_STATEMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "if"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "("
+                        },
+                        {
+                            "type": "CONDITION",
+                            "children": [
+                                {
+                                    "type": "EXPRESSION",
+                                    "children": [
+                                        {
+                                            "type": "TERM",
+                                            "children": [
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "flagA"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION_TAIL",
+                                            "children": [
+                                                {
+                                                    "type": "ADD_OP",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "or"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM",
+                                                    "children": [
+                                                        {
+                                                            "type": "FACTOR",
+                                                            "children": [
+                                                                {
+                                                                    "type": "TERMINAL",
+                                                                    "value": "flagB"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TERM_TAIL"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "EXPRESSION_TAIL"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "CONDITION_TAIL"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ")"
+                        },
+                        {
+                            "type": "BLOCK",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "{"
+                                },
+                                {
+                                    "type": "STATEMENTS",
+                                    "children": [
+                                        {
+                                            "type": "IF_STATEMENT",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "if"
+                                                },
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "("
+                                                },
+                                                {
+                                                    "type": "CONDITION",
+                                                    "children": [
+                                                        {
+                                                            "type": "EXPRESSION",
+                                                            "children": [
+                                                                {
+                                                                    "type": "TERM",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "FACTOR",
+                                                                            "children": [
+                                                                                {
+                                                                                    "type": "TERMINAL",
+                                                                                    "value": "not"
+                                                                                },
+                                                                                {
+                                                                                    "type": "FACTOR",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "type": "LITERAL",
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "type": "TERMINAL",
+                                                                                                    "value": "false"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "TERM_TAIL"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "EXPRESSION_TAIL"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "CONDITION_TAIL"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": ")"
+                                                },
+                                                {
+                                                    "type": "BLOCK",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "{"
+                                                        },
+                                                        {
+                                                            "type": "STATEMENTS",
+                                                            "children": [
+                                                                {
+                                                                    "type": "ACTION",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "TERMINAL",
+                                                                            "value": "clean"
+                                                                        },
+                                                                        {
+                                                                            "type": "TERMINAL",
+                                                                            "value": ";"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "}"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "ELSE_PART"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "}"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ELSE_PART"
+                        }
+                    ]
+                },
+                {
+                    "type": "WHILE_STATEMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "while"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "("
+                        },
+                        {
+                            "type": "CONDITION",
+                            "children": [
+                                {
+                                    "type": "EXPRESSION",
+                                    "children": [
+                                        {
+                                            "type": "TERM",
+                                            "children": [
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "startX"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "CONDITION_TAIL",
+                                    "children": [
+                                        {
+                                            "type": "REL_OP",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "<"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION",
+                                            "children": [
+                                                {
+                                                    "type": "TERM",
+                                                    "children": [
+                                                        {
+                                                            "type": "FACTOR",
+                                                            "children": [
+                                                                {
+                                                                    "type": "LITERAL",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "TERMINAL",
+                                                                            "value": "5"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TERM_TAIL"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "EXPRESSION_TAIL"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ")"
+                        },
+                        {
+                            "type": "BLOCK",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "{"
+                                },
+                                {
+                                    "type": "STATEMENTS",
+                                    "children": [
+                                        {
+                                            "type": "ACTION",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "move"
+                                                },
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": ";"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ASSIGNMENT",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "startX"
+                                                },
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "="
+                                                },
+                                                {
+                                                    "type": "EXPRESSION",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERM",
+                                                            "children": [
+                                                                {
+                                                                    "type": "FACTOR",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "TERMINAL",
+                                                                            "value": "startX"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "TERM_TAIL"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "EXPRESSION_TAIL",
+                                                            "children": [
+                                                                {
+                                                                    "type": "ADD_OP",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "TERMINAL",
+                                                                            "value": "+"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "TERM",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "FACTOR",
+                                                                            "children": [
+                                                                                {
+                                                                                    "type": "LITERAL",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "type": "TERMINAL",
+                                                                                            "value": "1"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "type": "TERM_TAIL"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "type": "EXPRESSION_TAIL"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": ";"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "}"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "IF_STATEMENT",
+                    "children": [
+                        {
+                            "type": "TERMINAL",
+                            "value": "if"
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": "("
+                        },
+                        {
+                            "type": "CONDITION",
+                            "children": [
+                                {
+                                    "type": "EXPRESSION",
+                                    "children": [
+                                        {
+                                            "type": "TERM",
+                                            "children": [
+                                                {
+                                                    "type": "FACTOR",
+                                                    "children": [
+                                                        {
+                                                            "type": "TERMINAL",
+                                                            "value": "startX"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "TERM_TAIL"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION_TAIL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "CONDITION_TAIL",
+                                    "children": [
+                                        {
+                                            "type": "REL_OP",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "=="
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "EXPRESSION",
+                                            "children": [
+                                                {
+                                                    "type": "TERM",
+                                                    "children": [
+                                                        {
+                                                            "type": "FACTOR",
+                                                            "children": [
+                                                                {
+                                                                    "type": "LITERAL",
+                                                                    "children": [
+                                                                        {
+                                                                            "type": "TERMINAL",
+                                                                            "value": "5"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "TERM_TAIL"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "EXPRESSION_TAIL"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TERMINAL",
+                            "value": ")"
+                        },
+                        {
+                            "type": "BLOCK",
+                            "children": [
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "{"
+                                },
+                                {
+                                    "type": "STATEMENTS",
+                                    "children": [
+                                        {
+                                            "type": "ACTION",
+                                            "children": [
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": "turnRight"
+                                                },
+                                                {
+                                                    "type": "TERMINAL",
+                                                    "value": ";"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TERMINAL",
+                                    "value": "}"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ELSE_PART"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TERMINAL",
+            "value": "}"
+        }
+    ]
+}
